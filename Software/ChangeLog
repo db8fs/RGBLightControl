@@ -1,0 +1,4 @@
+2011-07-30:	• improved stability when channel switching
+		• improved TV color detection for atmospheric light mode
+		• added RGB2HSI conversion for RGBA structures
+2011-04-22:	• Converted into GNU Autotools project

@@ -1,0 +1,53 @@
+<html>
+<head>
+	<title>RGBLightControl WebInterface</title>
+	<script type="text/javascript" src="javascript/prototype.js"></script>
+	<script type="text/javascript" src="javascript/jscolor.js"></script>
+	
+	<script type="text/javascript">
+		function OnColorChosen()
+		{
+			var colorPicker = new jscolor.color(document.getElementById('color1'), {});
+			var myAjax = new Ajax.Request( "setcolor.webem?color=" + colorPicker, { method: 'get' } );
+		}
+		
+		function OnColorSet(originalRequest)
+		{
+			document.getElementById('output').innerHTML = originalRequest.responseText;
+		}
+		
+		function OnButtonPlay()
+		{
+			var text = document.getElementById('id_play_button').value;
+			
+			if(text == 'Play') {
+				text = 'Stop';
+			} else {
+				text = 'Play';
+			}
+			
+			var myAjax = new Ajax.Request( "play.webem?cmd=" + text, { method: 'get' } );
+			
+			document.getElementById('id_play_button').value = text;
+		}
+		
+		function OnButtonDelete()
+		{
+			var myAjax = new Ajax.Request( "delete.webem", { method: 'get' } );
+			
+			document.getElementById('id_play_button').value = 'Stop';
+		}
+	</script>
+</head>
+<body>
+	<p>
+      This is a sample page for the RGBLightControl WebGUI.
+    </p>
+	<p>
+	Click here: <input id="color1" class="color" value="66ff00" onchange="OnColorChosen()">	
+	</p>
+	
+	<input id="id_play_button" type="button" value="Play" onclick="OnButtonPlay()" />
+	<input id="id_delete_button" type="button" value="Delete" onclick="OnButtonDelete()" />
+</body>
+</html>

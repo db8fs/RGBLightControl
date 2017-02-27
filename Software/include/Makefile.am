@@ -1,0 +1,30 @@
+EXTRA_DIST=\
+		config.h\
+		CBaseConfiguration.h\
+		CBaseMessage.h\
+		CConfiguration.h\
+		CDisplayMode.h\
+		CDreamboxGrabberDM8000.h\
+		CImageGrabber.h\
+		CImage.h\
+		CImageReader.h\
+		CLEDConfig.h\
+		CMessage.h\
+		CSerialPort.h\
+		CSystemTools.h\
+		CColorspaceConverter.h\
+		IDreamboxGrabber.h\
+		CAmbientLightMode.h\
+		CColorspaceConverter.h\
+		CConstantLightMode.h\
+		CDevice.h\
+		CDisplayMode.h\
+		CSequenceLightMode.h\
+		CAccelerometerMode.h\
+		CThermometerMode.h\
+		CI2CDevices.h\
+		CI2CSlave.h\
+		CI2CMaster.h\
+		CWebserver.h\
+		RGBLightControl.h
+

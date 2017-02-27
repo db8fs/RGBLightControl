@@ -1,0 +1,20 @@
+TODO
+----
+
+• reduce memory consumption for grabbed images
+• smoothen color switching (time behaviour)
+• add light dynamic effects
+• improve HTTP support
+• daemonize this whole stuff 
+• Each device should have its own set of playmodes
+• create Sequence(Player|Manager) to have one thread for all registered devices
+• autodetect devices on system by default
+• use /var for running webserver, but populate with stuff from DATADIR
+• Refactor class structure, especially DeviceMode handling
+• get rid of that nasty CDevice::LEDConfigurationCallback and find a better approach
+• WebCam sensor mode?
+• UserMode?
+• refactor code to avoid continue/break - it's nice for C, but simply overhead in C++
+• split into shared library core and a small frontend tool
+• build some nice python wrapper
+• build Documentation

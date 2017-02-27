@@ -1,0 +1,4 @@
+ATmega16 fuse settings for RGBLightControl (no bootloader atm):
+
+HIGH: 	0xC1
+LOW: 	0xEF
